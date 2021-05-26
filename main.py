@@ -97,6 +97,7 @@ def run_tests():
         driver.implicitly_wait(2)
         find_owner(driver,first_name)
     find_owner_fail(driver)
+    driver.get(f"{PC_HOST}/owners")
     driver.close()
 
 run_tests()
